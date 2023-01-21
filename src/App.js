@@ -8,10 +8,10 @@ function App() {
 
   useEffect(() => {
     const lastIndex = people.length - 1;
-    if(index < 0) {
+    if (index < 0) {
       setIndex(lastIndex);
     }
-    if(index > lastIndex) {
+    if (index > lastIndex) {
       setIndex(0);
     }
   }, [index, people]);
@@ -39,9 +39,9 @@ function App() {
             position = 'activeSlide';
           }
           if (
-            personIndex === index - 1 || 
+            personIndex === index - 1 ||
             (index === 0 && personIndex === people.length - 1)
-            ) {
+          ) {
             position = 'lastSlide';
           }
           return (
